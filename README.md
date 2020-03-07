@@ -11,21 +11,21 @@ Executables should appear as mv, mvp, mvt and test.
 
 Arguments are passed to program from commandline (not stdin).
 
-mv < matrixFilePath >* < vectorFilePath >** < resultFileName >*** <K>****
-mvp < matrixFilePath >* < vectorFilePath >** < resultFileName >*** <K>****
-mvt < matrixFilePath >* < vectorFilePath >** < resultFileName >*** <K>****
+mv < matrixFilePath >* < vectorFilePath >** < resultFileName >*** <K>****</br>
+mvp < matrixFilePath >* < vectorFilePath >** < resultFileName >*** <K>****</br>
+mvt < matrixFilePath >* < vectorFilePath >** < resultFileName >*** <K>****</br>
 
-*	<matrixFilePath> is path to matrixfile eg. "/home/umurotti/Documents/CS342/Project1/matrixfile"\n
-**	<vectorFilePath> is path to vectorfile eg. "/home/umurotti/Documents/CS342/Project1/vectorfile"
-***	<resultFileName> is the name of the file for result to be written.
-	It is placed into current running directory with given name. If the file exists, it should overwrite. Otherwise, it should create a new one
-****	<K> is an integer which specifies the number of splits
+\*	< matrixFilePath > is path to matrixfile eg. "/home/umurotti/Documents/CS342/Project1/matrixfile"</br>
+**	< vectorFilePath > is path to vectorfile eg. "/home/umurotti/Documents/CS342/Project1/vectorfile"</br>
+***	< resultFileName > is the name of the file for result to be written.
+	It is placed into current running directory with given name. If the file exists, it should overwrite. Otherwise, it 		should create a new one</br>
+****	< K > is an integer which specifies the number of splits</br>
 
-Example command:*
-	./mvt myMatrix myVector result 5
+Example command:*</br>
+	./mvt myMatrix myVector result 5</br>
 *	Here since the myMatrix and myVector are not full path, they should be under the current running directory.
 
-				TEST
+					TEST
 - There is a C program called Test.c to run timimng tests
 - This program creates three different sized matrices and vector where n = 10, 100, 1000
 - Then each program (mv, mvp and mvt) are tested to do the multiplication and their turnaorund time are printed on commandline

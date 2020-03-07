@@ -15,7 +15,7 @@ mv < matrixFilePath >* < vectorFilePath >** < resultFileName >*** <K>****
 mvp < matrixFilePath >* < vectorFilePath >** < resultFileName >*** <K>****
 mvt < matrixFilePath >* < vectorFilePath >** < resultFileName >*** <K>****
 
-*	<matrixFilePath> is path to matrixfile eg. "/home/umurotti/Documents/CS342/Project1/matrixfile"
+*	<matrixFilePath> is path to matrixfile eg. "/home/umurotti/Documents/CS342/Project1/matrixfile"\n
 **	<vectorFilePath> is path to vectorfile eg. "/home/umurotti/Documents/CS342/Project1/vectorfile"
 ***	<resultFileName> is the name of the file for result to be written.
 	It is placed into current running directory with given name. If the file exists, it should overwrite. Otherwise, it should create a new one

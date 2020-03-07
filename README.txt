@@ -1,11 +1,8 @@
  ---------------------------------------
-|		CS 342			|
-|	       Project I		|
+|	Matrix-Vector Multiplier	|
 |---------------------------------------|
 |	Name:		Umur		|
 |	Surname:	Göğebakan	|
-|	ID:		21702705	|
-|	Section:	02		|
  ---------------------------------------
 
 To obtain executables type make in commandline.

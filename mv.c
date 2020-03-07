@@ -123,6 +123,7 @@ void reduce(const int K, const int noOfRows, const char *interfile_path, const c
         //write to result file
         char *resultFileFullPath = stringConcat(resultfile_path, resultName);
         FILE *resultPtr = fopen(resultFileFullPath, "w+");
+        printf("result file path: %s\n", resultFileFullPath);
         //freeing tmp
         free(resultFileFullPath);
 

@@ -130,6 +130,7 @@ void reducePipe(const int K, const int noOfRows, int **fileDescriptors, const ch
         //write to result file        
         char *resultFileFullPath = stringConcat(resultfile_path, resultName);
         FILE *resultPtr = fopen(resultFileFullPath, "w+");
+        printf("result file path: %s\n", resultFileFullPath);
         //freeing tmp
         free(resultFileFullPath);
 

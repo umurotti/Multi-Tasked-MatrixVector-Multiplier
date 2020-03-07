@@ -170,6 +170,7 @@ void *reducerRunner(void *params) {
     //write to result file        
     char *resultFileFullPath = stringConcat(args->resultFilePath, resultName);
     FILE *resultPtr = fopen(resultFileFullPath, "w+");
+    printf("result file path: %s\n", resultFileFullPath);
     //freeing tmp
     free(resultFileFullPath);
 
@@ -178,13 +179,14 @@ void *reducerRunner(void *params) {
     }
     fclose(resultPtr);
     // exit the current thread 
+    printf("Exiting reduce runner\n");
     pthread_exit(NULL); 
 }
 
 void *mapperRunner(void *params) {
     //sleep(10);
     struct mapper_thread_arg *args = params;
-    printf("%d\n",  args->i);
+    printf("Thread_args.i: %d\n",  args->i);
     //assign split file
     FILE *splitPtr = assignFile(args->i, SPLIT_NAME, args->splitFilePath, "r");
     //read vector
@@ -214,7 +216,6 @@ void *mapperRunner(void *params) {
             interSize++;
         }
     }
-    printf("hello%d\n", interSize);
     common.interSizes[args->i] = interSize;
     struct tuple *tmp = malloc(sizeof(struct tuple) * interSize);
     common.inters[args->i] = tmp;
@@ -230,6 +231,7 @@ void *mapperRunner(void *params) {
         }
     }
     // exit the current thread 
+    printf("Exiting mapper runner\n");
     pthread_exit(NULL); 
 }
 

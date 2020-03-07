@@ -11,7 +11,7 @@ Executables should appear as mv, mvp, mvt and test.
 
 Arguments are passed to program from commandline (not stdin).
 
-mv "<matrixFilePath>"* <vectorFilePath>** <resultFileName>*** <K>****
+mv < matrixFilePath >* <vectorFilePath>** <resultFileName>*** <K>****
 mvp <matrixFilePath>* <vectorFilePath>** <resultFileName>*** <K>****
 mvt <matrixFilePath>* <vectorFilePath>** <resultFileName>*** <K>****
 

@@ -10,10 +10,10 @@ To obtain executables type make in commandline.
 Executables should appear as mv, mvp, mvt and test.
 
 Arguments are passed to program from commandline (not stdin).
-
-mv < matrixFilePath >* < vectorFilePath >** < resultFileName >*** <K>****</br>
-mvp < matrixFilePath >* < vectorFilePath >** < resultFileName >*** <K>****</br>
-mvt < matrixFilePath >* < vectorFilePath >** < resultFileName >*** <K>****</br>
+</br>
+mv < matrixFilePath >* < vectorFilePath >** < resultFileName >*** < K >\*\*\*\*</br>
+mvp < matrixFilePath >* < vectorFilePath >** < resultFileName >*** < K >\*\*\*\*</br>
+mvt < matrixFilePath >* < vectorFilePath >** < resultFileName >*** < K >*\*\*\*</br>
 
 \*	< matrixFilePath > is path to matrixfile eg. "/home/umurotti/Documents/CS342/Project1/matrixfile"</br>
 **	< vectorFilePath > is path to vectorfile eg. "/home/umurotti/Documents/CS342/Project1/vectorfile"</br>

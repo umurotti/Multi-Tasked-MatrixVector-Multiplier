@@ -14,12 +14,14 @@ Arguments are passed to program from commandline (not stdin).
 mv < matrixFilePath >* < vectorFilePath >** < resultFileName >*** < K >\*\*\*\*</br>
 mvp < matrixFilePath >* < vectorFilePath >** < resultFileName >*** < K >\*\*\*\*</br>
 mvt < matrixFilePath >* < vectorFilePath >** < resultFileName >*** < K >*\*\*\*</br>
+mvt_s < matrixFilePath >* < vectorFilePath >** < resultFileName >*** < K >**** < B > *****</br>
 
 \*	< matrixFilePath > is path to matrixfile eg. "/home/umurotti/Documents/CS342/Project1/matrixfile"</br>
 **	< vectorFilePath > is path to vectorfile eg. "/home/umurotti/Documents/CS342/Project1/vectorfile"</br>
 ***	< resultFileName > is the name of the file for result to be written.
 	It is placed into current running directory with given name. If the file exists, it should overwrite. Otherwise, it 		should create a new one</br>
 ****	< K > is an integer which specifies the number of splits</br>
+*****	< B > is an integer which specifies the fixed-size of each buffer
 
 Example command:*</br>
 	./mvt myMatrix myVector result 5</br>
